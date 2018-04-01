@@ -1,0 +1,103 @@
+body
+*{ margin: 5px; padding: 3px;}
+
+header, section, footer, aside, nav, article, figure, figcaption, hgroup{ display: block;border-radius: 20px;}
+
+h1{text-align: center;font:bold 20px verdana, sans-serif;color: white;}
+h2{text-align: center;font: bold 20px verdana, sans-serif;}
+p{text-align: justify;}
+figure{text-align: center;}
+
+#cabecera{
+  
+  background: rgba(244,244,245,1);
+  text-align: center;
+  margin-top: 40px;
+  margin-left:10%;
+  margin-right:10%;
+  margin-bottom: 0px;
+  padding-top:30px;
+  width:80%;
+  height:150px;
+  
+}
+
+#principal{
+  
+  background-color:#004569;}
+ 
+
+#menu { background: #FFFFFF; border:1px solid #000000; padding: 5px 35px;text-align: center;color: black;border-radius: 20px; 
+      color: white;}
+
+#seccion { width: 70%; margin: 20px; float: left;color: black;border-radius: 20px;
+           background: #FFFFFF;
+       background: -moz-radial-gradient(center, circle, #0000FF , #00008B );}
+
+#columna { width: 20%; margin: 20px 0px; float: left; padding: 20px;border-radius: 20px;
+          background: #FFFFFF;
+        background: #FFFFFF;}
+
+#pie { clear: both;background: #000000; text-align: center;padding: 2px; color: white;
+       border-radius: 20px;}
+
+nav{
+display:inline;
+background: #CCC;
+margin-left:10%;
+margin-right:10%;
+padding-top:15px;
+width:80%;
+height:40px;
+float:left;
+text-align:center;}
+
+body {
+background-color:#004569;} 
+
+nav ul{
+  padding-left: 0px;
+  margin-left: 0px;
+  background: #CCC;  
+  width: 80%;
+ 
+  display: inline;
+  
+}
+
+nav ul li{
+display:inline;
+width:80%;
+color:#000;
+padding: 0px 20px 0px 20px;
+
+}
+
+nav ul li a{
+background:#CCC;
+width:80%;
+color:#000;
+text-decoration:none;
+display:inline;
+}
+
+nav ul li a:hover { 
+outline: none;
+color:#FFF;
+background:#004569;
+padding: 10px 10px 10px 10px;
+display: inline;
+border-radius: 5px;
+}
+
+    
+
+
+
+
+
+
+
+
+
+
