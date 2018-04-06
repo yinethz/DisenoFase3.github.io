@@ -1,9 +1,14 @@
 * {
-	padding: 0px;
+	padding: 1px;
 	margin: 0px;
 	background-color: #b3b3b3;
 }
 
+#principal{
+  
+  background-color:#004569;}
+}
+	
 #header {
 	margin: auto;
 	width: 1000px;
@@ -85,3 +90,18 @@ h1 {
 	height: auto;
 	margin: 15px 0;
 }
+.pie { 
+	clear: both;
+	background: #000000; 
+	text-align: center;
+	padding: 2px; color: white;
+    border-radius: 10px;
+}
+article
+	 { width: 96%; 
+	 	margin: 10px; 
+	 	float: left;
+	 	color: black; 
+	 	float: left;	
+        
+       }
