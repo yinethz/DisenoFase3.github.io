@@ -23,8 +23,9 @@ ul {
 	background-color: #005883;
 	color: #fff;
 	text-decoration: none;
-	padding: 15px 41.1px;
+	padding: 20px 28.1px;
 	display: block;
+	transition: .8s;
 }
 
 .nav li a:hover {
@@ -33,6 +34,10 @@ ul {
 
 .nav > li {
 	float: left;
+}
+
+.nav li li {
+	width: 250px;
 }
 
 .nav li ul{
@@ -50,7 +55,7 @@ ul {
 }
 
 .nav li ul li ul {
-	right: -140px;
+	right: -252px;
 	top: 0px;
 }
 
