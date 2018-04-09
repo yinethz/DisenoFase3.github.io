@@ -56,9 +56,11 @@ ul {
 	background-color: var(--azul-principal);
 	color: var(--blanco);
 	text-decoration: none;
-	padding: 15px 41.1px;
+	padding: 14px 41.1px;
 	display: block;
+transition: .8s;
 }
+
 
 .nav li a:hover {
 	background-color: var(--gris-hover);
@@ -68,6 +70,9 @@ ul {
 	float: left;
 }
 
+.nav li li {
+	width: 250px;
+}
 .nav li ul{
 	display: none;
 	position: absolute;
@@ -83,7 +88,7 @@ ul {
 }
 
 .nav li ul li ul {
-	right: -140px;
+	right: -252px;
 	top: 0px;
 }
 .seccion { 

@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --naranja: orange;
   --negro:  black;
   --fondo: #b3b3b3;
@@ -22,9 +22,12 @@
 	width: 100%;
 	font-family: Arial, Helvetica, sans-serif;
 }
-#header header h1 img{
+  h1 img{
+	
 	width: 90px;
 	height: 90px;
+	
+	
 }
 
 ul {
@@ -70,7 +73,7 @@ ul {
 }
 
 .nav li ul li ul {
-	right: -252px;
+	right: -250px;
 	top: 0px;
 }
 
