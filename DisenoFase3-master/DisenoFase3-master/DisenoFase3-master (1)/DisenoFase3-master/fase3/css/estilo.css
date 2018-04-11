@@ -1,0 +1,91 @@
+* {
+	padding: 1px;
+	margin: 0px;
+	background-color: #b3b3b3;
+}
+
+#principal{
+  
+  background-color:#004569;}
+}
+
+#header {
+	margin: auto;
+	width: 1000px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+/*Menu color de fondo, color de letra, ancho y largo de la caja*/
+.nav li a {
+	background-color: #005883;
+	color: #fff;
+	text-decoration: none;
+	padding: 20px 28.1px;
+	display: block;
+	transition: .8s;
+}
+
+.nav li a:hover {
+	background-color: #434343;
+}
+
+.nav > li {
+	float: left;
+}
+
+.nav li li {
+	width: 250px;
+}
+
+.nav li ul{
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+
+.nav li:hover > ul {
+	display: block;
+}
+
+.nav li ul li{
+	position: relative;
+}
+
+.nav li ul li ul {
+	right: -252px;
+	top: 0px;
+}
+
+h1 {
+	text-align: center;
+	background-color: #005883;
+	color: #fff;
+	text-decoration: none;
+	padding: 15px 5px;
+	display: block;
+	ight: -140px;
+	top: 0px;
+}
+.seccion { 
+	width: 70%; 
+	margin: 20px; 
+	float: left;	   
+    background: -moz-radial-gradient(center, circle, #0000FF , #00008B );
+    text-align: justify;
+}
+
+h2{
+	text-align: center;
+}
+.pie { 
+	clear: both;
+	background: #000000; 
+	text-align: center;
+	padding: 2px; color: white;
+    border-radius: 10px;
+}
+.widget { width: 20%; margin: 20px 0px; float: left; padding: 20px;border-radius: 20px;
+          background: #004569;text-align: center;}

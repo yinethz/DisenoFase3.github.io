@@ -1,0 +1,161 @@
+﻿:root {
+  --naranja: orange;
+  --negro:  black;
+  --fondo: #b3b3b3;
+  --azul-principal: #005883;
+  --gris-hover: #434343;
+  --blanco: #fff;
+}
+* {
+	padding: 0px;
+	margin: 0px;
+	background-color: var(--fondo);
+}
+
+#principal{
+  
+  background-color:var(--azul-principal);
+}
+	
+#header {
+	margin: auto;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+  h1 img{
+	
+	width: 90px;
+	height: 90px;
+	
+	
+}
+
+ul {
+	list-style: none;
+}
+/*Menu color de fondo, color de letra, ancho y largo de la caja*/
+.nav{
+	width: 98%;
+}
+.nav li a {
+	background-color: var(--azul-principal);
+	color: var(--blanco);
+	text-decoration: none;
+	padding: 20px 28.1px;
+	display: block;
+	transition: .8s;
+}
+
+.nav li a:hover {
+	background-color: var(--gris-hover);
+}
+
+.nav > li {
+	float: left;
+}
+
+.nav li li {
+	width: 250px;
+}
+
+.nav li ul{
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+
+.nav li:hover > ul {
+	display: block;
+}
+
+.nav li ul li{
+	position: relative;
+}
+
+.nav li ul li ul {
+	right: -250px;
+	top: 0px;
+}
+
+h1 {
+	text-align: center;
+	background-color: var(--azul-principal);
+	color: var(--blanco);
+	text-decoration: none;
+	padding: 15px 5px;
+	display: block;
+	height: -140px;
+	top: 0px;
+}
+.acordeon input{
+	display: none;
+}
+.acordeon_titulo{
+	display: block;
+	padding: 15px;
+	background: var(--azul-principal);
+	color: var(--blanco);
+	font-size: 20px;
+	cursor: pointer;
+	border-bottom: 1px solid var(--blanco);
+}
+.acordeon .acordeon_item:hover .acordeon_titulo, .acordeon .acordeon_item .acordeon_titulo:hover {
+	background-color: var(--gris-hover);
+}
+.acordeon .acordeon_item .contenido-acordeon{
+	display: none;
+	transition: .8s;
+}
+.acordeon .acordeon_item .contenido-acordeon p:before{
+	content: '>';
+	font-size: 20pt;
+	text-shadow: 1px 1px 2px var(--gris-hover);
+	font-weight: bold;
+	color: var(--naranja);
+	padding-right: 10px;
+}
+.acordeon .acordeon_item .contenido-acordeon ul{
+	list-style-position: inside;
+}
+.acordeon .acordeon_item .contenido-acordeon ul li:before{
+	content: '•';
+	padding-right: 10px;
+	color: var(--naranja);	
+}
+.acordeon .acordeon_item:hover .contenido-acordeon{
+	padding: 20px 28.1px;
+	display: block;
+	transition: all 0.5s ease;
+	-webkit-transition: width 2s, height 4s;
+}
+.pie { 
+	clear: both;
+	background: var(--negro);
+	text-align: center;
+	padding: 2px; color: white;
+    border-radius: 10px;
+}
+.seccion { 
+	width: 70%; 
+	margin: 20px; 
+	float: left;
+	color: var(--negro);
+	border-radius: 20px;
+    text-align: justify;
+}
+article{
+	width: 96%; 
+ 	margin: 10px; 
+ 	float: left;
+ 	color: var(--negro); 
+ 	float: left;        
+}
+.widget { 
+	width: 20%; 
+	margin: 20px 0px; 
+	float: left; 
+	padding: 20px;
+	border-radius: 20px;
+	background: var(--azul-principal);
+	text-align: center;
+}
