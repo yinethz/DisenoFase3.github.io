@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MODELADO DE DATOS</title>
+		<link rel="shortcut icon" href="img/logounad.jpg" />
+		<meta charset="UTF-8">
+		<meta content="Yineth Zambrano - Yecid" name="author"/>
+		<meta content="Pagina para aprender BBDD" name="description"/>
+		<meta content="MODELADO, BBDD, NORMALIZACION" name="keywords"/>
+		<title>OVI MODELADO DE DATOS</title>
+		<link rel="stylesheet" href="../../css/normalize.css">
+		<LINK REL=StyleSheet HREF="../css/estilo.css" type="text/css" MEDIA=screen> 
+	</head>
+
+	<body>
+
+		<div id="header">
+			<header>
+				<h1>
+					<img src="../img/unad.jpg" alt="Logo unad" />
+					OVI - MODELADO DE DATOS
+				</h1>
+			</header>
+			<ul class="nav">
+				<li><a href="../pags/index.html">INICIO</a></li>
+				<li><a href="">OBJETIVOS DEL OVI</a></li>
+				<li><a href="../pags/contenido.html">CONTENIDO INFORMATIVO</a></li>
+				<li><a href="../modelado.html">MODELADO DE DATOS</a>
+					<ul>
+						
+						<li><a href="">LECTURAS</a>
+                        <ul>
+                        <li><a href="">LECTURA 1</a></li>
+						<li><a href="">LECTURA 2</a></li>
+                        <li><a href="">LECTURA 3</a></li>
+                        <li><a href="">LECTURA 4</a></li>
+                        <li><a href="">LECTURA 5</a></li>
+                        </li> </ul>
+						<li><a href="">MULTIMEDIA</a>
+                        <ul>
+                        <li><a href="modelologico.html">MODELO LOGICO</a></li>
+                        <li><a href="SmartUML.html">StarUML</a></li>
+                        </li> </ul>
+                        
+                        <li><a href="">ACTIVIDADES</a></li>
+					</ul>
+				</li>
+				<li><a href="participantes.html">PARTICIPANTES</a>
+					<ul>
+						<li><a href="">YINETH ZAMBRANO</a></li>
+						<li><a href="">YECID DIAZ</a></li>
+						<li><a href="">EMMANUEL CÁRDENAS</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<section class="seccion">
+			<article>
+				<div class="acordeon">
+					<div class="acordeon_item">
+						<label for="item1" class="acordeon_titulo">Tipos de Modelos</label>
+						<div  class="contenido-acordeon">
+							<p>Hay muchos tipos de modelos de bases de datos. Algunos de los más comunes incluyen:</p>
+							<ul>
+								<li>Modelo de base de datos jerárquico</li>
+								<li>Modelo relacional</li>
+								<li>Modelo de red</li>
+								<li>Modelo entidad-relación</li>
+							</ul>
+							<p>Puedes elegir describir una base de datos con cualquiera de ellos dependiendo de varios factores. El mayor factor es si el sistema de gestión de bases de datos que estás usando es compatible con un modelo en particular. La mayoría de los sistemas de gestión de bases de datos están desarrollados con un modelo de datos particular en mente y requieren que los usuarios adopten ese modelo, aunque algunos son compatibles con múltiples modelos.</p>
+							<p>Además, diferentes modelos aplican a diferentes etapas del proceso de diseño de bases de datos. Los modelos de datos conceptuales de alto nivel son mejores para crear mapas de relaciones entre datos en las formas en que la gente percibe esos datos. Por otro lado, los modelos lógicos basados en registros reflejan más estrechamente las formas en que los datos se almacenan en el servidor.</p>
+							<p>La elección de un modelo de datos también depende de que alinees tus prioridades con las fortalezas de la base de datos de un modelo en particular, ya sea que esas prioridades incluyan velocidad, reducción de costos, usabilidad o algo más.</p>
+						</div>
+					</div>
+					<div class="acordeon_item">
+						<label for="item2" class="acordeon_titulo">Modelo de base de datos jerárquico</label>
+						<div  class="contenido-acordeon">
+							<p>El modelo jerárquico organiza los datos en una estructura de árbol, en la que cada registro tiene un único elemento o raíz. Los registros del mismo nivel se clasifican en un orden específico. Ese orden se usa a manera de orden físico para almacenar la base de datos. El modelo es bueno para describir muchas relaciones del mundo real.</p><br>
+							<p>Este modelo fue usado principalmente por los Sistemas de Gestión de Información de IBM en las décadas de 1960 y 1970, pero raramente se los ve en la actualidad debido a ciertas ineficiencias operativas.</p><br>
+							<img src="../img/m_jerarquico.jpg" alt="Modelo jerarquico" />
+							<p>¿Cómo funcionan?</p><br>
+							<p>A diferencia del modelo relacional, el modelo jerárquico no diferencia una vista lógica de una vista física de la base de datos. De manera que las relaciones entre datos se establecen siempre a nivel físico, es decir, mediante referencia a direcciones físicas del medio de almacenamiento (sectores y pistas).</p><br>
+							<p>Los datos se almacenan en la forma de registros, el equivalente a las tuplas del modelo relacional. Cada registro consta de un conjunto de campos, el equivalente a los atributos del modelo relacional. Un conjunto de registros con los mismos campos se denomina fichero (record type, en inglés), el equivalente a las relaciones del modelo relacional.<br>
+							El modelo jerárquico facilita relaciones padre-hijo, es decir, relaciones 1:N (de uno a varios) del modelo relacional. Pero a diferencia de este último, las relaciones son unidireccionales. En justicia, dichas relaciones son hijo-padre, pero no padre-hijo. Por ejemplo, el registro de un empleado (nodo hijo) puede relacionarse con el registro de su departamento (nodo padre), pero no al contrario. Esto implica que solamente se puede consultar la base de datos desde los nodos hoja hacia el nodo raíz. La consulta en el sentido contrario requiere una búsqueda secuencial por todos los registros de la base de datos (por ejemplo, para consultar todos los empleados de un departamento). En las bases de datos jerárquicas no existen índices que faciliten esta tarea.</p>
+												
+						</div>
+					</div>
+					<div class="acordeon_item">
+						<label for="item3" class="acordeon_titulo">Modelo relacional</label>
+						<div  class="contenido-acordeon">
+							<p>Siendo el modelo más común, el modelo relacional ordena los datos en tablas, también conocidas como relaciones, cada una de las cuales se compone de columnas y filas. Cada columna enumera un atributo de la entidad en cuestión, por ejemplo, precio, código postal o fecha de nacimiento. En conjunto, a los atributos en una relación se los llama dominio. Se elige un atributo particular o combinación de atributos como clave primaria, a la cual se puede hacer referencia en otras tablas, en donde se la denomina clave externa.</p>
+							<p>Cada fila, también denominada tupla, incluye datos sobre una instancia específica de la entidad en cuestión, por ejemplo, un empleado específico.
+
+							El modelo también representa los tipos de relaciones entre esas tablas, incluidas las relaciones uno a uno, uno a muchos y muchos a muchos. Este es un ejemplo:</p>
+							<img src="../img/m_relacional.png" alt="Modelo relacional" />
+							
+						</div>
+					</div>
+					<div class="acordeon_item">
+						<label for="item4" class="acordeon_titulo">Modelo entidad-relación</label>
+						<div  class="contenido-acordeon">
+							<p>Este modelo capta las relaciones entre entidades del mundo real de forma muy similar al modelo de red, pero no está directamente ligado a una estructura física de la base de datos. En cambio, con frecuencia se lo usa para diseñar una base de datos conceptualmente.</p><br>
+							<p>Aquí, a las personas, lugares y cosas, acerca de las cuales se almacenan puntos de datos, se las denomina entidades, cada una de las cuales tiene ciertos atributos que en conjunto forman su dominio. La cardinalidad, o relaciones entre entidades, también se representa en diagramas.</p>
+							<img src="../img/m_e-r.png" alt="Modelo entidad-relacion" />
+							<p>Una forma común del diagrama entidad-relación ER es el esquema de estrella, en el cual una tabla central de información se conecta a múltiples tablas dimensionales.</p>
+							
+							
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<aside>
+			<div class="widget">
+				<div class="imagen"></div>
+				<blockquote>twitter UNAD</blockquote>
+				<a href="https://twitter.com/UniversidadUNAD" target="_blank"><img src="img/twitter.png"></a>
+			</div>
+		</aside>
+		<footer class="pie">
+				<blockquote>
+				OVI Diseñado por grupo colaborativo N° 301122_9 - Curso Diseño de Sitios Web - 
+				</blockquote>
+				<blockquote>
+				Ingeniería de Sistemas	
+				</blockquote>			
+				&copy; 2018
+		</footer>
+	</body>
+</html>

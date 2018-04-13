@@ -26,8 +26,19 @@
 	
 	width: 90px;
 	height: 90px;
-	
-	
+}
+
+.historiabbdd{
+	width: 220px;
+	height: 220px;
+	margin: 10px auto;
+	display: block;
+}
+.imgbbdd{
+	width: 480px;/*ancho*/
+	height: 480px; /*alto*/
+	margin: 10px auto;
+	display: block;
 }
 
 ul {
