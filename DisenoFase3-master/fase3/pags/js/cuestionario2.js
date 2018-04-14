@@ -1,6 +1,6 @@
 
 <!--
-alert("Bienvenido al primer cuestionario de Modelado de datos. El tema es ......... \n\nSeleccione las respuestas que crea correctas, teniendo en "+
+alert("Bienvenido al primer cuestionario de Modelado de datos. Los temas son Que es modelado de datos y historia\n\nSeleccione las respuestas que crea correctas, teniendo en "+
       "\ncuenta las siguientes consideraciones \n\n1. Los aciertos tienen el valor de un punto"+
 	  " \n\n2. Las respuestas no contestadas ni suman ni restan puntos.") 
 //-->
@@ -9,11 +9,11 @@ var resp = new Array;
 var faite = new Array;
 var score = 0;
 
-resp[1] = "a";
+resp[1] = "c";
 resp[2] = "b";
-resp[3] = "c";
-resp[4] = "b";
-resp[5] = "c";
+resp[3] = "a";
+resp[4] = "d";
+resp[5] = "b";
 
 
 function Engine(question, repose) 
@@ -37,21 +37,21 @@ function Engine(question, repose)
 function Nivel () {
       
         if (score >= 4 && score <= 5) {
-                alert(score + "/5 " + "Muy bien, prueba superada");
+                alert(score + "/5 " + "Excelente, Comprendio adecuadamente los temas");
                 }
         if (score >= 3 && score < 4) {
-                alert(score + "/5 " + "Bien, pero puedes hacerlo mejor");
+                alert(score + "/5 " + "Sobresaliente, puedes hacerlo mejor");
                 }
         if (score >= 2 && score < 3) {
-                alert(score + "/5 " + "Estan en nivel medio. Analiza mejor el tema");
+                alert(score + "/5 " + "Aceptable. Analiza mejor el tema de la lectura 1 y 2");
                 }
         if (score >= 1 && score < 2) {
-                alert(score + "/5 " + "Insuficiente. Vuelve a estudiar el tema");
+                alert(score + "/5 " + "Insuficiente. Vuelve a estudiar el tema de las lecturas 1 y 2");
                 }
         if (score < 1) {
                 alert("Su puntuación es: "+ score 
 				+"\nLa puntuación máxima que podía obtener es 5" 
-				+"\nTiene que reviazar nuevamente sus lecciones" 
+				+"\nTiene que reviazar y analizar las lecturas propuestas " 
 				+"\nSu porcentaje de aciertos es menos del 0%");
                 }
 }
