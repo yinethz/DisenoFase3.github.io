@@ -48,7 +48,6 @@ ul {
 	list-style: none;
 }
 /*Menu color de fondo, color de letra, ancho y largo de la caja*/
-
 .nav{
 	width: 98%;
 }
@@ -56,11 +55,10 @@ ul {
 	background-color: var(--azul-principal);
 	color: var(--blanco);
 	text-decoration: none;
-	padding: 14px 41.1px;
+	padding: 20px 28.1px;
 	display: block;
 	transition: .8s;
 }
-
 
 .nav li a:hover {
 	background-color: var(--gris-hover);
@@ -73,6 +71,7 @@ ul {
 .nav li li {
 	width: 250px;
 }
+
 .nav li ul{
 	display: none;
 	position: absolute;
@@ -88,9 +87,10 @@ ul {
 }
 
 .nav li ul li ul {
-	right: -252px;
+	right: -250px;
 	top: 0px;
 }
+
 .seccion { 
 	width: 70%; 
 	margin: 20px; 

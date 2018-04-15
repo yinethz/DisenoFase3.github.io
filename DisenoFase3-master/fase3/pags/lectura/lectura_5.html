@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MODELADO DE DATOS</title>
+		<link rel="shortcut icon" href="../img/logounad.jpg" />
+		<meta charset="UTF-8">
+		<meta content="Yineth Zambrano - Yecid - Emmanuel" name="author"/>
+		<meta content="Pagina para aprender BBDD" name="description"/>
+		<meta content="MODELADO, BBDD, NORMALIZACION" name="keywords"/>
+		<title>OVI MODELADO DE DATOS</title>
+		<link rel="stylesheet" href="../css/normalize.css">
+		<LINK REL=StyleSheet HREF="../css/estilo.css" TYPE="text/css" MEDIA=screen> 
+	</head>
+
+	<body>
+
+		<div id="header"></div>
+			<header>
+				<h1><img src="img/unad.jpg" alt="Logo unad" />
+				OVI - MODELADO DE DATOS</h1>
+			</header>
+			<ul class="nav">
+				<li><a href="../../index.html">INICIO</a></li>
+				<li><a href="../objetivos.html">OBJETIVOS DEL OVI</a></li>
+				<li><a href="../contenido.html">CONTENIDO INFORMATIVO</a>
+					
+				</li>
+				<li><a href="../modelado.html">MODELADO DE DATOS</a>
+					<ul>
+						
+						<li><a href="../lectura_1.html">LECTURAS</a>
+                        <ul>
+                        <li><a href="lectura_1.html">LECTURA 1</a></li>
+						<li><a href="">LECTURA 2</a></li>
+                        <li><a href="lectura_3.html">LECTURA 3</a></li>
+                        <li><a href="lectura_4.html">LECTURA 4</a></li>
+                        <li><a href="lectura_5.html">LECTURA 5</a></li>
+                        </li> </ul>
+						<li><a href="../multimedia.html">MULTIMEDIA</a>
+                        <ul>
+                        <li><a href="../multimedia.html">MODELO LOGICO</a></li>
+                        
+                        </li> </ul>
+                        
+                            <li><a href="">ACTIVIDADES</a>
+                        <ul>
+                        <li><a href="../cuestionario.html">CUESTIONARIO 1</a></li>
+                        <li><a href="">CUESTIONARIO 2</a></li>
+                        <li><a href="">SOPA DE LETRAS</a></li>
+                        <li><a href="">CUESTIONARIO 3</a></li>
+                        
+                        </ul>
+                        </li>
+					</ul>
+				</li>
+				<li><a href="../participantes.html">PARTICIPANTES</a>
+					<ul>
+						<li><a href="">YINETH ZAMBRANO</a></li>
+						<li><a href="">YECID DIAZ</a></li>
+                        <li><a href="">EMMANUEL CÁRDENAS</a></li>
+					</ul>
+				</li>
+			</ul>
+			<article>
+			<div class="acordeon">
+				<div class="acordeon">
+				<div class="acordeon_item">
+					<input TYPE="radio" name="acordeon" id="item1">
+					<label for="item1" class="acordeon_titulo">Modelo Lógico</label>
+					<p>El proceso de diseño lógico El proceso de diseño lógico en el modelo relacional:</p><br>
+					<ul>
+						<li>Se transforman en tablas todas los tipos de entidades y relaciones que aparecen en el diagrama E/R. </li>
+						<li>Se seleccionan las claves primarias para cada una de las tablas de nuestro esquema lógico. </li>
+						<li>Se fusionan aquellas tablas que compartan su clave primaria. En este paso ha de elegirse la estrategia más adecuada para representar en el modelo relacional cada una de las jerarquías de especialización/generalización que aparezcan en el diagrama E/R. </li>
+						<li> Se normaliza el esquema resultante. Cuando se decida no normalizar tras haber encontrado una dependencia entre los atributos de una relación, se ha de justificar el
+ 						por qué (p.ej. CP→Municipio en una dirección, pero tal vez no nos interese tener que mantener una tabla aparte con todos los municipios de España y sus códigos postales).</li>
+						<li>Se definen todas las restricciones de integridad que sean aplicables al esquema obtenido (claves primarias, claves alternativas, claves externas, dominios de los atributos y restricciones asociadas a las tuplas de cada relación). </li>
+					</ul><br>
+					<p>Un modelo lógico de datos es un modelo que no es específico de una base de datos que describe aspectos relacionados con las necesidades de una organización para recopilar datos y las relaciones entre estos aspectos.</p><br>
+					<p>Un modelo lógico contiene representaciones de entidades y atributos, relaciones, identificadores exclusivos, subtipos y supertipos y restricciones entre relaciones. Un modelo lógico también puede contener objetos de modelo de dominio o referirse a uno o varios modelos de dominio o de glosario. Una vez definidas las relaciones y los objetos lógicos en un modelo lógico de datos, utilice el entorno de trabajo para transformar el modelo lógico en una representación física específica de la base de datos en forma de modelo físico de datos.</p><br>
+					<p>Los objetos del modelo lógico siempre están contenidos en un objeto de paquete raíz. Siempre hay un paquete raíz, pero puede añadir paquetes adicionales bajo el paquete raíz para agrupar objetos similares.Mediante el entorno de trabajo, puede crear un modelo lógico de datos a partir de una plantilla. También puede importar tipos de datos simples de un archivo de definición de esquemas XML (.xsd) en un modelo lógico de datos como tipos de dominio.</p>
+					<img class="imgbbdd" src="../img/t.modelos.png" alt="t.modelos"/>
+				</div>
+		</article>
+		
+		<footer class="pie">
+				<blockquote>
+				OVI Diseñado por grupo colaborativo N° 301122_9 - Curso Diseño de Sitios Web - 
+				</blockquote>
+				<blockquote>
+				Ingeniería de Sistemas	
+				</blockquote>			
+				&copy; 2018
+		</footer>
+	</body>
+</html>
