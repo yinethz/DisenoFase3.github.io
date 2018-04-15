@@ -1,0 +1,234 @@
+:root {
+  --naranja: orange;
+  --negro:  black;
+  --fondo: #b3b3b3;
+  --azul-principal: #005883;
+  --gris-hover: #434343;
+  --blanco: #fff;
+}
+* {
+	padding: 0px;
+	margin: 0px;
+	background-color: var(--fondo);
+}
+
+#principal{
+  
+  background-color:var(--azul-principal);
+}
+	
+#header {
+	margin: auto;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+  h1 img{
+	
+	width: 90px;
+	height: 90px;
+}
+
+.historiabbdd{
+	width: 220px;
+	height: 220px;
+	margin: 10px auto;
+	display: block;
+}
+.imgbbdd{
+	width: 480px;/*ancho*/
+	height: 480px; /*alto*/
+	margin: 10px auto;
+	display: block;
+}
+
+ul {
+	list-style: none;
+}
+/*Menu color de fondo, color de letra, ancho y largo de la caja*/
+.nav{
+	width: 98%;
+}
+.nav li a {
+	background-color: var(--azul-principal);
+	color: var(--blanco);
+	text-decoration: none;
+	padding: 20px 28.1px;
+	display: block;
+	transition: .8s;
+}
+
+.nav li a:hover {
+	background-color: var(--gris-hover);
+}
+
+.nav > li {
+	float: left;
+}
+
+.nav li li {
+	width: 250px;
+}
+
+.nav li ul{
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+
+.nav li:hover > ul {
+	display: block;
+}
+
+.nav li ul li{
+	position: relative;
+}
+
+.nav li ul li ul {
+	right: -250px;
+	top: 0px;
+}
+
+p {
+	text-align: left;
+	background-color: #FFFFFF;
+	color: : #005883;
+	text-decoration: none;
+	padding: 15px 5px;
+	border-radius: 8px;
+	display: block;
+	height: -140px;
+	top: 0px;
+
+}
+
+h1 {
+	text-align: center;
+	background-color: var(--azul-principal);
+	color: var(--blanco);
+	text-decoration: none;
+	padding: 15px 5px;
+	border-radius: 8px;
+	display: block;
+	height: -140px;
+	top: 0px;
+}
+
+
+.pie { 
+	clear: both;
+	background: var(--negro);
+	text-align: center;
+	padding: 2px; color: white;
+    border-radius: 10px;
+}
+
+
+
+article{
+float: left;
+width:60%;
+height: 250px;
+display: table;
+margin-top: 15px;
+margin-left:11%;
+margin-right: 10%;
+margin-bottom: 25px;
+text-align:justify;
+border: 2px solid black;
+font-family:calibri;
+font-size: 15px;
+background:#FFF;
+padding: 10px 25px 10px 170px;
+border-radius: 0px 20px 0px 20px;
+transition:opacity 1s, box-shadow 1s, transform 1s, background 1s;
+-webkit-transition:opacity 1s, box-shadow 1s, transform 1s, background 1s;
+-moz--webkit-transition:opacity 1s, box-shadow 1s, transform 1s, background 1s;
+-ms--webkit-transition:opacity 1s, box-shadow 1s, transform 1s, background 1s;
+-o--webkit-transition:opacity 1s, box-shadow 1s, transform 1s, background 1s;
+}
+
+
+
+#yineth{
+width: 125px;
+height: 170px;
+font-family: calibri;
+font-size: 20px;
+color: white;
+text-align: left;
+background: url(img/.jpg);
+background-size:100% 100%;
+background-repeat:no-repeat;
+display: box;
+border: 1px solid black;
+border-radius: 0px 10px 0px 10px;
+-webkit-border-radius: 0px 10px 0px 10px;
+-moz-border-radius: 0px 10px 0px 10px;
+-ms-border-radius: 0px 10px 0px 10px;
+-o-border-radius: 0px 10px 0px 10px;
+float: left;
+margin-left: -5px;
+margin-top:40px;
+position: absolute;
+transform:translate(-140px,0px);
+-webkit-transform:translate(-140px,0px);
+-moz-transform:translate(-140px,0px);
+-ms-transform:translate(-140px,0px);
+-o-transform:translate(-140px,0px);
+}
+
+#yecid{
+width: 125px;
+height: 170px;
+font-family: calibri;
+font-size: 20px;
+color: white;
+text-align: left;
+background: url(../img/yecid.png);
+background-size:100% 100%;
+background-repeat:no-repeat;
+display: box;
+border: 1px solid black;
+border-radius: 0px 10px 0px 10px;
+-webkit-border-radius: 0px 10px 0px 10px;
+-moz-border-radius: 0px 10px 0px 10px;
+-ms-border-radius: 0px 10px 0px 10px;
+-o-border-radius: 0px 10px 0px 10px;
+float: left;
+margin-left: -5px;
+margin-top:40px;
+position: absolute;
+transform:translate(-140px,0px);
+-webkit-transform:translate(-140px,0px);
+-moz-transform:translate(-140px,0px);
+-ms-transform:translate(-140px,0px);
+-o-transform:translate(-140px,0px);
+}
+
+#emmanuel{
+width: 125px;
+height: 170px;
+font-family: calibri;
+font-size: 20px;
+color: white;
+text-align: left;
+background: url(img/.png);
+background-size:100% 100%;
+background-repeat:no-repeat;
+display: box;
+border: 1px solid black;
+border-radius: 0px 10px 0px 10px;
+-webkit-border-radius: 0px 10px 0px 10px;
+-moz-border-radius: 0px 10px 0px 10px;
+-ms-border-radius: 0px 10px 0px 10px;
+-o-border-radius: 0px 10px 0px 10px;
+float: left;
+margin-left: -5px;
+margin-top:40px;
+position: absolute;
+transform:translate(-140px,0px);
+-webkit-transform:translate(-140px,0px);
+-moz-transform:translate(-140px,0px);
+-ms-transform:translate(-140px,0px);
+-o-transform:translate(-140px,0px);
+}
