@@ -1,0 +1,36 @@
+#sopa{
+	margin: auto;
+	border: 1px  solid #F00;
+	
+}
+#contenedor{
+	margin:auto;
+	width: 410px;
+	height: 410px;
+	padding:20px;
+	border-radius:10px;
+	overflow: hidden; 
+}
+
+.caja{
+margin: 3 px;
+width:40px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+box-shadow:0 0 5px rgba(0,0,0, 0.3);
+border-radius: 5px;
+float: left;
+}
+
+
+.resaltar{
+	color:#0C3;
+	background-color:#FF0;
+	
+}
+.resaltar2{
+	color: #F00;
+	background-color:#FF0;
+	
+}
